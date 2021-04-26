@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html>
-<body>
+<head>
 <style>
+    body{
+    background-color: crimson;
+    }
+    #groza{
+    text-align: justify;
+    text-align-last: left;
+    font-size: 18px;
+    }
+    #daudz{
+        text-align: justify;
+    text-align-last: center;
+    font-size: 18px;
+    }
     h1{
         display:flex;
         justify-content: center;
         align-items:center;
         font-size: 25px;
         font-family: sans-serif;
+        color: blue;
 } 
 </style>
+</head>
+<body>
+    <ul id="list"></ul>
 <h1>Iepirkumu skaits</h1>
 <script src="javascript.js"></script>
-<div id="Okno">
     <form id="form">
-        <h2 id="Okno" style="display">Pievienot pirkumu groza</h2>
-        <input type="text" id="groza" placeholder="Ievadi Seit:">
-        <button type="ok" id="ok">Pievienot</button>
+        <h2 style="display">Pievienot pirkumu groza</h2>
+        <input type="text" id="groza" placeholder="pirkums">
+        <input type="text" id="daudz" placeholder="daudzums">
+        <button onclick="addItem()">Add item</button>
+        <button onclick="removeItem()">Remove item</button>
     </form>
-</div>
+</body>
 <h3>Pirkumi</h3>
 </html>
 
