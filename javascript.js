@@ -15,7 +15,7 @@ function removeItem(){
     let ul = document.getElementById("list");
     let groza = document.getElementById("groza");
     let item = document.getElementById(groza.value);
-    let groza = document.getElementById("daudzums");
+    let daudzums = document.getElementById("daudzums");
     let item = document.getElementById(daudzums.value);
     ul.removeChild(item);
 }
